@@ -115,8 +115,8 @@ class PICOForecast(object):
         The default value of 2.0 is the (optimistic) scenario where number of
         detectors scales with area.
     """
-    def __init__(self, depth_table_path, aperture=PICO_NOMINAL_APERTURE,
-                 ndet_scaling=2.0):
+    def __init__(self, depth_table_path="depth_table.pck", 
+                 aperture=PICO_NOMINAL_APERTURE, ndet_scaling=2.0):
         self.aperture = aperture
         self.ndet_scaling = ndet_scaling
         self.scale_ndet = (self.aperture / PICO_NOMINAL_APERTURE)**ndet_scaling

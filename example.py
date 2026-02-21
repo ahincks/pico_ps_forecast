@@ -2,7 +2,7 @@
 
 import pico_ps_forecast as pps
 
-# Initialise model. Pass the depth calculations (not included in repo).
+# Initialise model.
 pico = pps.PICOForecast("depth_table.pck")
 
 print("Available frequencies (GHz):", end="")
